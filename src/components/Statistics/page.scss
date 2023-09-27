@@ -1,0 +1,93 @@
+.stat {
+    background: #6C5FBC
+}
+
+.statWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 55px 0;
+}
+
+.statbox {
+    text-align: center;
+    width: 210px;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: -100px;
+        top: 0;
+        width: 1px;
+        background-color: #C5C5C5;
+        height: 100px;
+    }
+
+    &:nth-child(3)::after {
+        display: none;
+    }
+
+
+    .num {
+        color: #FFF;
+        text-align: center;
+        font-size: 43.2px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 54px;
+    }
+
+    .statText {
+        color: #CBD5E1;
+        text-align: center;
+        font-size: 14.4px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21.6px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .statWrapper {
+        flex-direction: column;
+        gap: 60px;
+
+    }
+
+    .statbox {
+        width: 210px;
+        position: relative;
+
+        &::after {
+            content: "";
+            right: 60px;
+            top: 130%;
+            height: 1px;
+            width: 100px;
+        }
+
+    }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .statbox {
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -20%;
+            top: 0;
+            width: 1px;
+            background-color: #C5C5C5;
+            height: 100px;
+        }
+
+    }
+
+}

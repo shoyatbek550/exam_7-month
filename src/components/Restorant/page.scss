@@ -1,0 +1,108 @@
+.little {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+        display: flex;
+        color: #8E97A6;
+        font-size: 17.332px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23.11px;
+    }
+}
+.restorantBox {
+    display: flex;
+    flex-direction: column;
+    img {
+        object-fit: fit;
+        height: 100%;
+        width: 100%;
+    }
+    border: 1.593px solid var(--colors-gray-gray-2, #F4F4F6);
+    border-radius: 30px;
+    background: var(--Pure-White, #FFF);
+    box-shadow: 7.57186px 90.86229px 45.43114px 0px rgba(229, 229, 229, 0.70);
+}
+.infoRestoran {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    button {
+        border: none;
+        background-color: transparent;
+        width: 60px;
+    }
+}
+.topDishes {
+    margin: 100px 0;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    .topDishesTitle {
+        color: #323142;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25.558px;
+        margin: 35px auto;
+    }
+    a {
+        position: absolute;
+        bottom: -20px;
+        right: 10px;
+        color: #ACADB9;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 45.184px;
+        letter-spacing: -0.1px;
+        display: flex;
+        align-items: center;
+    }
+    path {
+        stroke: #8E97A6;
+    }
+}
+.topDishesCart {
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+    .restorantBox {
+        img {
+            height: 100%;
+        }
+    }
+    .topDishesCart {
+       flex-direction: row;
+        gap: 15px;
+    }
+    .infoRestoran {
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+        h3 {
+            font-size: 15px;
+        }
+        .little {
+            span {
+                font-size: 10px;
+            }
+        }
+        button {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            svg {
+                width: 40px;
+            }
+        }
+    }
+    .topDishes{
+        h3{
+            font-size: 30px;
+        }
+    }
+}

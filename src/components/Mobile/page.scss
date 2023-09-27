@@ -1,0 +1,92 @@
+.mobileWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 95px 0;
+}
+
+.mobileInfo {
+    width: 50%;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    h2 {
+        color: #18181B;
+        font-size: 50.923px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 58.198px;
+        text-transform: capitalize;
+
+    }
+    
+    li {
+        color: #676767;
+        font-size: 20.335px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30.502px;
+        /* 150% */
+        margin: 15px 0 ;
+    }
+}
+.colored {
+    color: #6C5FBC;
+}
+@media screen and (max-width: 768px) {
+    .mobileWrapper{
+        flex-direction: column-reverse;
+        padding: 25px;
+        .image{
+            margin-top: 25px;
+            img{
+                width: 170px;
+                height: 340px;
+            }
+        }
+    }
+    .mobileInfo{
+        align-items: center;
+        padding-right: 0;
+        width:100% ;
+        gap: 10px;
+
+        h2{
+            text-align: center;
+            font-size: 30px;
+            width: 60%;
+        }
+        li{
+            text-align: center;
+            font-size: 11px;
+
+            width: 80%;
+            margin: 0 auto ;
+        }
+    }
+    .prBtn{
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .image{
+        img{
+            width: 200px;
+            object-fit: contain;
+        }
+    }
+    .mobileInfo{
+        padding-right: 0;
+        gap: 10px;
+        h2{
+            font-size: 35px;
+        }
+        li{
+            font-size: 14px;
+        }
+    }
+  }
+  

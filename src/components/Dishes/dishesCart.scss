@@ -1,0 +1,312 @@
+.dishesWrapper {
+    padding: 35px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dishcart {
+    border-radius: 34.665px;
+    width: 225.169px;
+    height: 391.299px;
+    flex-shrink: 0;
+    border: 1.444px solid #F4F4F6;
+    background: #FFF;
+    box-shadow: 6.8649px 82.37885px 41.18943px 0px rgba(229, 229, 229, 0.70);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+
+    h3 {
+        color: #323142;
+        font-size: 23.11px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 37.553px;
+    }
+}
+
+.little {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        display: flex;
+        color: #8E97A6;
+        font-size: 17.332px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23.11px;
+        /* 133.333% */
+    }
+}
+
+.likeBtn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .tocartButton {
+        border: none;
+        width: 40.935px;
+        height: 36.816px;
+        flex-shrink: 0;
+        background-color: #323142;
+        color: white;
+        font-weight: 700;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 40px;
+        }
+    }
+}
+
+.price {
+    color: #323142;
+    font-size: 25.998px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40.442px;
+    /* 155.556% */
+}
+
+.mark {
+
+    font-size: 11.45px;
+    font-style: normal;
+    font-weight: 400;
+    width: fit-content;
+    line-height: normal;
+    padding: 3px 7px;
+    border-radius: 4.839px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .dishesWrapper {
+        padding: 0px;
+        display: flex;
+        justify-content: baseline;
+        gap: 25px;
+    }
+
+    .dishcart {
+        border-radius: 25px;
+        width: 160px;
+        height: 250px;
+        padding: 10px;
+        gap: 0px;
+
+        img {
+            width: 100%;
+            height: 120px;
+            margin: 0;
+
+        }
+
+        .mark {
+            font-size: 10px;
+        }
+
+        .dishCartImage {
+            font-size: 15.10px;
+            margin: 0px;
+        }
+    }
+
+    .topDishesCart {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .little {
+
+        .time,
+        .rate {
+            font-size: 12.332px;
+        }
+    }
+
+    .likeBtn {
+        z-index: 50;
+        right: 5px;
+    }
+
+    .bottom {
+        align-items: center;
+
+        .tocartButton {
+
+            width: 25.935px;
+            height: 20.816px;
+
+        }
+    }
+
+    .price {
+        font-size: 15.998px;
+        font-weight: 600;
+        line-height: 30.442px;
+    }
+
+    .mark {
+
+        font-size: 11.45px;
+        font-style: normal;
+        font-weight: 400;
+        width: fit-content;
+        line-height: normal;
+        padding: 3px 7px;
+        border-radius: 4.839px;
+
+    }
+
+}
+
+.accordionsTitle{
+    text-align: center;
+    color: #323142;
+
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+    .dishcart {
+        border-radius: 25px;
+        width: 180px;
+        height: 250px;
+        padding: 10px;
+        gap: 0px;
+
+        img {
+            width: 100%;
+            height: 120px;
+
+        }
+
+        h3 {
+            font-size: 14.11px;
+            margin: 0px;
+        }
+    }
+.accordionsTitle{
+    font-size: 25px;
+}
+    .topDishesCart {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .little {
+
+        span {
+            font-size: 10.332px;
+        }
+    }
+
+    .likeBtn {
+        z-index: 50;
+        right: 5px;
+    }
+
+    .bottom {
+        justify-content: space-around;
+
+        button {
+
+            width: 15.935px;
+            height: 13.816px;
+
+            svg {
+                width: 20px;
+            }
+        }
+    }
+
+    .price {
+        font-size: 15.998px;
+        font-weight: 600;
+        line-height: 30.442px;
+    }
+
+    .mark {
+
+        font-size: 11.45px;
+        font-style: normal;
+        font-weight: 400;
+        width: fit-content;
+        line-height: normal;
+        padding: 3px 7px;
+        border-radius: 4.839px;
+
+    }
+}
+
+
+
+
+.TRENDING {
+    color: #FB471D;
+    background: #F7C5BA;
+}
+
+.SUPREME {
+
+    color: #309D5B;
+    background: #7bdba1;
+}
+
+.HEALTHY {
+
+    color: #DAA31A;
+    background: #F7EDD0;
+}
+
+.pagination {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+
+    button {
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        width: 150px;
+        z-index: 999;
+        opacity: 1;
+        border-radius: 8px;
+        background-color: #6C5FBC;
+        color: white;
+    }
+}
+
+.search {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    input {
+        padding: 10px 20px;
+        width: fit-content;
+        border-radius: 12px;
+    }
+}

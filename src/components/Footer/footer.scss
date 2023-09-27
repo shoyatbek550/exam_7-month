@@ -1,0 +1,22 @@
+footer{
+    background: #EAEAEA;
+}
+
+.footerLogo{
+    padding: 50px 0 ;
+    border-bottom: 1px solid #818181;
+
+}
+.allRights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    span{
+        color: #999;
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: 25px; /* 147.059% */
+    }
+}

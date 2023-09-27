@@ -1,0 +1,32 @@
+.miniCards {
+    width: fit-content;
+
+}
+
+.purchaseBox {
+    width: 50%;
+
+    .purchaseBoxtitle {
+        color: var(--gray-900, #18181B);
+        font-size: 50.923px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 58.198px;
+        text-transform: capitalize;
+    }
+}
+
+.miniDashboard {
+    width: 50%;
+    img {
+        max-width: 550px;
+        height: 550px;
+        object-fit: contain;
+    }
+}
+.flex {
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+   
+}

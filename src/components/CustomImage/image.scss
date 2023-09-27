@@ -1,0 +1,20 @@
+.customImage {
+    position: relative;
+    object-fit: contain;
+    transition-duration: 700ms;
+    transition-timing-function: ease-in-out;
+}
+
+.loading {
+    transform: scale(1);
+    filter: blur(0);
+    filter: grayscale(0);
+
+}
+
+.loaded {
+    filter: grayscale(1);
+    transform: scale(1.1);
+    filter: blur(2rem);
+
+}

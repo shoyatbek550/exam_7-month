@@ -1,0 +1,79 @@
+.MiniPurchaseCard {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 12px;
+    border-radius: 12.041px;
+    background: var(--Full-White, #fff);
+    width: 350px;
+    margin: 9px 0;
+    position: relative;
+
+    .info {
+        h4 {
+            color: #323142;
+            font-size: 19.065px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%;
+        }
+
+        p {
+            color: #323142;
+            font-size: 12.041px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+        }
+    }
+
+    .time {
+        color: #ACADB9;
+        font-size: 13.044px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .flex {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .purchaseBox {
+        width: 100%;
+    }
+
+    .purchaseBoxtitle {
+        font-size: 25px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .miniDashboard {
+        width: 100%;
+
+        img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .purchaseBox {
+        .minicards {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+    }
+
+}

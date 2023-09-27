@@ -1,0 +1,93 @@
+.discount {
+    border-radius: 30px;
+    background: var(--Primary-Color, #6C5FBC);
+    width: 90%;
+    background-image: url(../../assets/bgrame.png);
+    padding: 35px;
+    margin: 100px 35px;
+
+    h1 {
+        color: #FFF;
+        font-size: 70px;
+        padding: 20px 0;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    label {
+        border-radius: 14.234px;
+        background: #FFF;
+        box-shadow: 0px 7.25333px 45.33334px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        padding: 17px 20px;
+        width: 550px;
+        align-items: center;
+
+    }
+
+    input {
+        border-radius: 14.234px;
+        background: #FFF;
+        color: #878787;
+        font-size: 16.268px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.488px;
+        text-transform: capitalize;
+        border: none;
+        box-shadow: 0px 7.25333px 45.33334px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    button {
+        color: #F7F8FA;
+        font-size: 14.752px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border: none;
+        letter-spacing: 0.443px;
+        text-transform: uppercase;
+        border-radius: 11.253px;
+        background: #6C5FBC;
+        padding: 12px 25px;
+    }
+
+    .discountImage {
+        display: flex;
+        justify-content: center;
+
+        img {
+            transform: scale(300%);
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .discountBox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            text-align: center;
+        }
+        label {
+            padding: 10px;
+            flex-direction: row;
+            width: 100%;
+            input {
+                width: 70%;
+            }
+        }
+        .discountImage {
+            margin: auto;
+            position: absolute;
+            right: calc(50% - 50px);
+            img {
+                transform: scale(150%);
+            }
+        }
+    }
+}
